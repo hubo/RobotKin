@@ -19,7 +19,7 @@ In RobotKin folder
 
 Then :
 
-    hg clone https://bitbucket.org/osrf/urdfdom_headers
+    git clone https://github.com/ros/urdfdom.git
     mkdir urdfdom_headers/build && cd urdfdom_headers/build
     cmake -DCMAKE_INSTALL_PREFIX:PATH=$ROBOTKIN_DEP_INSTALL_PATH ..
     make install
@@ -28,12 +28,6 @@ Then :
     git clone https://github.com/ros/console_bridge.git
     mkdir console_bridge/build && cd console_bridge/build
     cmake -DCMAKE_INSTALL_PREFIX:PATH=$ROBOTKIN_DEP_INSTALL_PATH .. 
-    make install
-    cd ../..
-
-    hg clone https://bitbucket.org/osrf/urdfdom
-    mkdir urdfdom/build && cd urdfdom/build
-    cmake -DCMAKE_INSTALL_PREFIX:PATH=$ROBOTKIN_DEP_INSTALL_PATH ..
     make install
     cd ../..
 
